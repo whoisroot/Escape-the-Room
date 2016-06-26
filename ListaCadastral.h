@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#define MAX 5
+#define TAM 5
 
 typedef struct No{
 	No* Ant = NULL;
@@ -18,7 +18,7 @@ public:
 	bool Vazia();
 	bool Cheia();
 	bool Remove(int);
-	bool Insere(No*);
+	bool Insere(int);
 	void ImprimeLista();
 	bool EstaNaLista(int);
 	int Size();

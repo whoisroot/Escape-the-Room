@@ -1,2 +1,2 @@
 all: *.cpp
-	g++ -o out Fila.cpp ListaCadastral.cpp main.cpp -I. 
+	g++ -o EscapeTheRoom Fila.cpp ListaCadastral.cpp Main.cpp -I. `allegro-config --cflags --libs` 

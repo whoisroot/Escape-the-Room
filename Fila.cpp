@@ -8,25 +8,20 @@ Fila::Fila(){
 	size = 0;
 }
 
-void Fila::Insere(No_fila* novo){
-	cout << "novo: " << novo->ID << " " << novo << " Head: " << Head << endl;
+void Fila::Insere(int id){
 	if(Head == NULL){
+        No_fila* novo = new No_fila;
+        novo->ID = id;
 		Head = novo;
 		size++;
 	}
 	else{
-		cout << "Chegou aqui?" << endl;
 		No_fila* aux = Head;
-		cout << "aux: " << aux << " aux->Prox: " << aux->Prox << endl;
-		while(aux->Prox != NULL){
-			cout << "Aux: " << aux << endl;
-			cout << "penis ";
-			cout << "aux: " << aux->ID << endl;
+		while(aux->Prox != NULL)
 			aux = aux->Prox;
-		}
+        No_fila* novo = new No_fila;
+        novo->ID = id;
 		aux->Prox = novo;
-		cout << "aux->ID: ";
-		cout << aux->ID << endl;
 		size++;
 	}
 }
@@ -36,8 +31,6 @@ void Fila::Inicio(){
 }
 
 int Fila::ElementoAtual(){
-	cout << "Entrou! " << endl;
-	cout << "Atual: " << Atual << " Atual->Prox: " << Atual->Prox << endl;
 	int id = Atual->ID;
 	cout << "Elemento atual: " << id << endl;
 	Atual = Atual->Prox;

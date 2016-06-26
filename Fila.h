@@ -14,7 +14,7 @@ private:
 	short size;
 public:
 	Fila();
-	void Insere(No_fila*);
+	void Insere(int);
 	void Inicio();
 	int ElementoAtual();
 	int Size();
