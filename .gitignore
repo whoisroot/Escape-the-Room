@@ -1,0 +1,23 @@
+################
+#Vim swap Files#
+################
+*.swp
+
+####################
+#Code::Blocks files#
+####################
+*.cbp
+*.depend
+obj/
+bin/
+*.*.cpp
+*.c
+
+##########
+#Binaries#
+##########
+out
+teste
+
+
+main_teste.cpp
