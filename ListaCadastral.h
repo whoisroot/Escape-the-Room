@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#define TAM 5
+#define TAM 10
 
 typedef struct No{
 	No* Ant = NULL;
