@@ -59,6 +59,7 @@ bool ListaCadastral::Insere(int id){
         novo->ID = id;
         head = novo;
         size++;
+        return 1;
         //cout << "Inseriu head" << endl;
 	}
 	else if(!Cheia()){

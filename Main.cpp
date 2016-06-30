@@ -95,7 +95,7 @@ srand(time(NULL));
 	bool porta = 1 , martelo = 0, chave = 0, tulipas = 1, vaso = 1, quadro = 1, click;
 
     //Popula a lista cadastral com os objetos a serem coletados, sempre gerando uma chave e um martelo
-    short cHave = 6 + rand()%2;
+    short cHave = (6 + (rand()%2));
     ObjGame->Insere(cHave);
     ObjGame->Insere(9);
     for(i = 0; i < 2; i++){
@@ -258,6 +258,7 @@ ObjGame->ImprimeLista();
                 }
             }
 
+
             Tela(ObjGame, tela, buffer,/* setaEsq,*/ setaDir, Parede1, Parede2, Parede3, Parede4, burgue, Gatinhos, Livro, Faca, Dinheiro, Quadro, Chave1,/*  Chave2 , Chave3,*/ Martelo1,/* Martelo2,*/ Vaso, Tulipas, Madeira, porta, quadro, vaso, tulipas);
             }
         }
@@ -273,3 +274,4 @@ ObjGame->ImprimeLista();
 
 	return 0;
 }
+END_OF_MAIN ()
